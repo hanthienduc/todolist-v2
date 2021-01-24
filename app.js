@@ -66,7 +66,7 @@ app.get("/", function(req, res) {
 
 });
 
-
+// using express.js route feature to generate custom list name
 app.get("/:customListName", function(req, res) {
     const customListName = _.capitalize(req.params.customListName);
 
@@ -91,6 +91,7 @@ app.get("/:customListName", function(req, res) {
 
 });
 
+// depend on which route user are in, save it to the correct item in that particular list
 app.post("/", function(req, res) {
 
     const itemName = req.body.newItem;
@@ -117,6 +118,7 @@ app.post("/", function(req, res) {
 
 });
 
+// delete item on home and particular list name and redirect to that route
 app.post("/delete", function(req, res) {
 
     const checkedItemId = req.body.checkbox;
