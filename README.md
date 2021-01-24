@@ -3,7 +3,7 @@ a simple todolist app created using:
 nodejs, express for server
 ejs for for front-end 
 mongodb, mongoose for database.
- -> database deploy to mongodb atlas platoform
+ -> database deploy to mongodb atlas platform
 
 finally, app is hosting on heroku 
 
